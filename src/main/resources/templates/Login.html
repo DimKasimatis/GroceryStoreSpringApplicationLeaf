@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1 th:text="'Welcome to ' + ${projectName}" ></h1>
+        <p id="method" th:text="'It came with method: ' + ${method}"></p>
+        <form method="POST" action="${action}">
+            <input name="${username}" />
+            <input name="${password}" type="password" />
+            <button type="submit">Login</button>
+        </form>
+    </body>
+</html>
